@@ -6,7 +6,7 @@
 <title>Unit 6 Test · Going on holiday</title>
 <meta name="description" content="Cutting Edge Pre-intermediate · Unit 6 test: Vocabulary, Grammar, Reading (50 questions)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <style>
 :root{
   --paper:#fbf7ee;--card:#fffdf8;--ink:#1f2430;--muted:#606878;--line:#d9d2c2;
@@ -31,7 +31,6 @@ input,select{-webkit-user-select:text;user-select:text}
 h1,h2,h3,.hand{font-family:var(--hand);font-weight:400;letter-spacing:.3px}
 h1{font-size:2rem;margin:0 0 4px;line-height:1.1}
 .sub{color:var(--muted);margin:0}
-.ar{font-family:var(--ar);direction:rtl;text-align:right}
 .screen{display:none;flex-direction:column;gap:16px}
 .screen.on{display:flex}
 .who{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;margin-top:14px}
@@ -65,7 +64,7 @@ h1{font-size:2rem;margin:0 0 4px;line-height:1.1}
 .jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .jump button{font:700 1rem var(--body);min-width:46px;min-height:44px;border-radius:10px;border:2px solid var(--bad);background:var(--bad-bg);color:var(--bad);cursor:pointer}
 /* result */
-.score{font-family:var(--hand);font-size:4rem;line-height:1}
+.score{font-family:var(--body);font-weight:700;font-size:3.4rem;line-height:1.1;font-variant-numeric:tabular-nums}
 .parts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
 .parts div{background:var(--yellow-soft);border:2px solid var(--line);border-radius:12px;padding:10px 4px;text-align:center;font-size:.95rem}
 .parts b{display:block;font-size:1.3rem;font-variant-numeric:tabular-nums}
@@ -100,7 +99,7 @@ footer{color:var(--muted);font-size:.85rem;text-align:center}
         <select id="grp"><option value="">Choose…</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option></select>
       </div>
     </div>
-    <p class="ar" style="margin:0">اكتب بياناتك واضغط <b><bdi>Start</bdi></b>. كل سؤال في صفحة لوحده، واضغط <b><bdi>Next</bdi></b> للسؤال اللي بعده و<b><bdi>Previous</bdi></b> للي قبله.</p>
+    <p class="sub" style="margin:0">Write your details and press <b>Start</b>. There is one question on each page. Press <b>Next</b> to go forward and <b>Previous</b> to go back.</p>
     <p class="msg" id="smsg"></p>
     <button class="btn yel" id="start" type="button">Start ➜</button>
     <footer>© 2026 Metwally · Cutting Edge Pre-intermediate · Unit 6</footer>
@@ -118,7 +117,7 @@ footer{color:var(--muted);font-size:.85rem;text-align:center}
   <section class="screen" id="s-blank">
     <div class="card">
       <h2 style="margin:0 0 6px;font-size:1.7rem">Some questions are empty</h2>
-      <p class="ar" style="margin:0">فيه أسئلة ما جاوبتش عليها. اضغط على الرقم عشان ترجع له، أو اضغط Finish anyway.</p>
+      <p class="sub" style="margin:0">Tap a number to go back to that question, or press Finish anyway.</p>
       <div class="jump" id="jump"></div>
     </div>
     <div class="row"><button class="btn ghost" id="back" type="button">← Back</button><button class="btn" id="force" type="button">Finish anyway</button></div>
@@ -164,62 +163,10 @@ const T1 = {title:"Text 1 – Faisal's email", text:[
 const T2 = {title:"Text 2 – Khalid's holiday", text:[
  "Last summer, Khalid went to Turkey with his friends. The start of the trip wasn't good. Their flight was delayed for three hours, and the airport lounge was very crowded. When they arrived, there was a long queue at passport control. But after that, everything was great. Their accommodation was comfortable and clean, and the hotel staff were very friendly. On the third day, they went on an interesting excursion to the mountains, where the scenery was beautiful. Khalid's favourite place was a peaceful lake near a small village. “Next year I'd like to go back,” he says, “but I'd rather stay in the village than in the city.”"]};
 
-const Q = [
-["A","You need your ___ to get through passport control.",["guidebook","towel","passport","phrasebook"],2,"passport = جواز السفر."],
-["A","Put on some ___ before you go to the beach, or you'll get burnt.",["toothpaste","suncream","sunglasses","foreign currency"],1,"suncream = واقي الشمس."],
-["A","I always feel ill on boats, so I take ___.",["credit cards","plane tickets","a swimsuit","travel sickness pills"],3,"travel sickness pills = حبوب دوار السفر."],
-["A","A ___ tells you about the places to visit in a city.",["guidebook","phrasebook","passport","camera"],0,"guidebook = دليل سياحي."],
-["A","I'm going to change some money into ___ at the airport.",["credit cards","plane tickets","foreign currency","suncream"],2,"foreign currency = عملة أجنبية."],
-["A","Don't forget your ___ – we're going swimming this afternoon.",["toothbrush","swimsuit","passport","phrasebook"],1,"swimsuit = ملابس السباحة."],
-["A","I brought my toothbrush, but I forgot the ___.",["towel","suncream","camera","toothpaste"],3,"toothpaste = معجون الأسنان."],
-["A","It's very bright today. Wear your ___.",["sunglasses","suncream","swimsuit","towel"],0,"sunglasses = نظارة شمسية."],
-["A","Our flight was ___ for four hours because of the bad weather.",["crowded","delayed","luxurious","peaceful"],1,"delayed = متأخرة."],
-["A","The beach was very ___ – there were people everywhere.",["peaceful","comfortable","crowded","delayed"],2,"crowded = زحمة."],
-["A","We waited in a long ___ at passport control.",["queue","lounge","excursion","scenery"],0,"queue = طابور."],
-["A","It was a five-star hotel with very ___ rooms.",["crowded","delayed","long","luxurious"],3,"luxurious = فخم."],
-["A","From the top of the mountain we could see beautiful ___.",["queues","scenery","accommodation","excursions"],1,"scenery = المناظر الطبيعية."],
-["A","We went on an ___ to the old city with a tour guide.",["accommodation","lounge","excursion","queue"],2,"excursion = جولة / رحلة قصيرة."],
-["A","The seats on the train were soft and ___.",["comfortable","crowded","delayed","long"],0,"comfortable = مريح."],
-["A","Which word can NOT go with “peaceful”?",["beach","lake","village","queue"],3,"نقول long queue، مو peaceful queue."],
-["A","Which word can NOT go with “delayed”?",["flight","scenery","train","bus"],1,"delayed للمواصلات بس."],
-["A","We stayed in cheap ___ near the station.",["excursion","scenery","accommodation","lounge"],2,"accommodation = السكن."],
-["B","We ___ going to visit our cousins in Dubai next week.",["are","is","am","be"],0,"we + are + going to."],
-["B","Ahmed is planning ___ a new car.",["buy","buying","to buy","bought"],2,"planning + to + V1."],
-["B","___ you going to stay in a hotel?",["Do","Are","Will","Is"],1,"Are you going to …?"],
-["B","I'm not ___ to take a taxi. I'll walk.",["go","goes","gone","going"],3,"I'm not going to + V1."],
-["B","I'd like ___ Japan one day.",["visit","to visit","visiting","visited"],1,"would like + to + V1."],
-["B","I'd rather ___ by train than by bus.",["travel","to travel","travelling","travelled"],0,"would rather + V1 بدون to."],
-["B","Would you rather stay at home ___ go out?",["than","and","or","but"],2,"في السؤال نخيّر بـ or."],
-["B","I'd rather ___ go out tonight. I'm tired.",["don't","not to","no","not"],3,"would rather not + V1."],
-["B","I think it ___ sunny tomorrow.",["is going","will be","will","be"],1,"التوقع: will + be."],
-["B","Don't worry. You ___ need a coat – it's very hot there.",["won't","don't will","willn't","aren't"],0,"won't = will not."],
-["B","___ it be easy to find a taxi at the airport?",["Does","Is","Will","Do"],2,"Will it be …?"],
-["B","A: Will you be home late? B: No, I ___.",["don't","won't","am not","willn't"],1,"No, I won't."],
-["B","Which sentence is a prediction?",["We're going to leave at 6.","I'd like to go abroad.","I'm planning to book a hotel.","I think you'll love Abha."],3,"التوقع بـ will: I think you'll …"],
-["B","Which sentence is a plan?",["We're going to drive to the beach on Friday.","It'll be hot.","You won't need a visa.","I think it'll rain."],0,"الخطة بـ going to."],
-["B","Could you ___ me the way to the station, please?",["telling","to tell","tell","told"],2,"Could you + V1."],
-["B","Do you mind ___ the window? It's cold.",["close","closing","to close","closed"],1,"Do you mind + V-ing."],
-["B","Do you mind if I ___ here?",["sit","sitting","to sit","sat"],0,"Do you mind if I + V1."],
-["B","Is it OK if I ___ your pen?",["borrowing","to borrow","borrowed","borrow"],3,"Is it OK if I + V1."],
-["B","A: Do you mind if I open the window? B: ___ It's hot in here.",["Yes, of course.","No, not at all.","Yes, I mind.","No, I can't."],1,"No, not at all = ما عندي مانع."],
-["B","Make it more polite: “Where's the bus station?”",["Could you tell me where is the bus station?","Could you tell me the bus station where is?","Could you tell me where the bus station is?","Could tell you me where the bus station is?"],2,"بعد Could you tell me يجي ترتيب الجملة العادي."],
-["C1","How long is the family going to stay in Malaysia?",["five days","two weeks","one month","one week"],1,"“to spend two weeks in Malaysia”"],
-["C1","Where are they going after Kuala Lumpur?",["Dubai","Abha","the mountains","Penang"],3,"“then take the train to Penang”"],
-["C1","How are they going to travel to Penang?",["by train","by plane","by car","by bus"],0,"“take the train to Penang”"],
-["C1","What would Faisal and his brother rather do?",["visit museums","stay at the hotel","go to the beach","go shopping"],2,"“my brother and I would rather go to the beach”"],
-["C1","Why isn't Faisal going to take a phrasebook?",["He forgot it.","Many people there speak English.","It's too heavy.","His brother has one."],1,"“because a lot of people there speak English”"],
-["C1","What does Faisal ask Omar to do?",["book a hotel","send him a guidebook","meet him at the airport","look after his bike"],3,"“Could you look after my bike?”"],
-["C2","Who did Khalid go to Turkey with?",["his friends","his family","his brother","nobody"],0,"“went to Turkey with his friends”"],
-["C2","How long was the flight delayed?",["one hour","two hours","three hours","four hours"],2,"“delayed for three hours”"],
-["C2","What was the airport lounge like?",["peaceful","crowded","luxurious","empty"],1,"“the airport lounge was very crowded”"],
-["C2","What was their accommodation like?",["crowded and noisy","expensive and dirty","small and old","comfortable and clean"],3,"“comfortable and clean”"],
-["C2","Where did they go on the excursion?",["to the mountains","to the beach","to the city","to a museum"],0,"“an excursion to the mountains”"],
-["C2","Where would Khalid rather stay next year?",["in the city","in a luxurious hotel","in the village","near the airport"],2,"“I'd rather stay in the village”"]
-];
-
+const Q = [["A", "You need your ___ to get through passport control.", ["guidebook", "passport", "towel"], 1, "A passport shows who you are when you travel."], ["A", "Put on some ___ before you go to the beach, or you'll get burnt.", ["sunglasses", "toothpaste", "suncream"], 2, "Suncream protects your skin from the sun."], ["A", "I always feel ill on boats, so I take ___.", ["credit cards", "a swimsuit", "travel sickness pills"], 2, "Travel sickness pills help when travelling makes you feel ill."], ["A", "A ___ tells you about the places to visit in a city.", ["guidebook", "phrasebook", "passport"], 0, "A guidebook gives information about places to visit."], ["A", "I'm going to change some money into ___ at the airport.", ["plane tickets", "suncream", "foreign currency"], 2, "Foreign currency is the money of another country."], ["A", "Don't forget your ___ – we're going swimming this afternoon.", ["toothbrush", "phrasebook", "swimsuit"], 2, "You wear a swimsuit when you go swimming."], ["A", "You clean your teeth with a toothbrush and ___.", ["toothpaste", "suncream", "a towel"], 0, "You put toothpaste on your toothbrush."], ["A", "It's very bright today. Wear your ___.", ["swimsuit", "towel", "sunglasses"], 2, "Sunglasses protect your eyes from bright light."], ["A", "Our flight was ___ for four hours because of the bad weather.", ["crowded", "delayed", "luxurious"], 1, "A delayed flight leaves late."], ["A", "The beach was very ___ – there were people everywhere.", ["peaceful", "comfortable", "crowded"], 2, "Crowded = full of people."], ["A", "We waited in a long ___ at passport control.", ["lounge", "queue", "scenery"], 1, "A queue is a line of people waiting."], ["A", "It was a five-star hotel with very ___ rooms.", ["crowded", "luxurious", "delayed"], 1, "Luxurious = very expensive and comfortable."], ["A", "From the top of the mountain we could see beautiful ___.", ["queues", "accommodation", "scenery"], 2, "Scenery = the natural view: mountains, rivers, forests."], ["A", "We went on an ___ to the old city with a tour guide.", ["excursion", "accommodation", "lounge"], 0, "An excursion is a short trip to visit a place."], ["A", "The seats on the train were soft and ___.", ["comfortable", "crowded", "delayed"], 0, "Comfortable = nice to sit in."], ["A", "Which word does NOT go with “peaceful”?", ["lake", "beach", "queue"], 2, "We say “a long queue”, not “a peaceful queue”."], ["A", "Which word does NOT go with “delayed”?", ["scenery", "flight", "train"], 0, "Only transport (flights, trains, buses) can be delayed."], ["A", "We stayed in cheap ___ near the station.", ["accommodation", "excursion", "scenery"], 0, "Accommodation = the place where you stay."], ["B", "We ___ going to visit our cousins in Dubai next week.", ["is", "are", "be"], 1, "we + are + going to"], ["B", "Ahmed is planning ___ a new car.", ["buy", "buying", "to buy"], 2, "plan + to + verb"], ["B", "___ you going to stay in a hotel?", ["Are", "Do", "Will"], 0, "Are you going to …?"], ["B", "I'm not ___ to take a taxi. I'll walk.", ["going", "go", "gone"], 0, "I'm not going to + verb"], ["B", "I'd like ___ Japan one day.", ["visit", "to visit", "visiting"], 1, "would like + to + verb"], ["B", "I'd rather ___ by train than by bus.", ["travel", "to travel", "travelling"], 0, "would rather + verb (no “to”)"], ["B", "I'd rather stay at home ___ go out tonight.", ["than", "or", "and"], 0, "would rather A than B"], ["B", "I'd rather ___ go out tonight. I'm tired.", ["don't", "no", "not"], 2, "would rather not + verb"], ["B", "I think it ___ sunny tomorrow.", ["will be", "will", "is going"], 0, "Prediction: will + be"], ["B", "You ___ need a coat – it's very hot there.", ["willn't", "won't", "aren't"], 1, "won't = will not"], ["B", "___ it be easy to find a taxi at the airport?", ["Does", "Will", "Is"], 1, "Will it be …?"], ["B", "A: Will you be home late?  B: No, I ___.", ["don't", "am not", "won't"], 2, "Short answer: No, I won't."], ["B", "Which sentence is a prediction?", ["I think you'll love Abha.", "We're going to leave at 6.", "I'd like to go abroad."], 0, "We use will / 'll for predictions."], ["B", "Which sentence is a plan?", ["It'll be hot.", "We're going to drive to the beach on Friday.", "I think it'll rain."], 1, "We use going to for plans."], ["B", "Could you ___ me the way to the station, please?", ["tell", "telling", "to tell"], 0, "Could you + verb"], ["B", "Do you mind ___ the window? It's cold.", ["close", "to close", "closing"], 2, "Do you mind + verb-ing"], ["B", "Do you mind if I ___ here?", ["sit", "sitting", "to sit"], 0, "Do you mind if I + verb"], ["B", "Is it OK if I ___ your pen?", ["borrowing", "borrow", "to borrow"], 1, "Is it OK if I + verb"], ["B", "A: Do you mind if I open the window?  B: ___ It's hot in here.", ["No, not at all.", "Yes, I mind.", "No, I can't."], 0, "“No, not at all” = it's OK, I don't mind."], ["B", "Which question is correct and polite?", ["Could you tell me where is the bus station?", "Could you tell me where the bus station is?", "Could you tell me the bus station where is?"], 1, "After “Could you tell me”, use normal word order: where the bus station is."], ["C1", "How long is the family going to stay in Malaysia?", ["five days", "one month", "two weeks"], 2, "“to spend two weeks in Malaysia”"], ["C1", "Where are they going after Kuala Lumpur?", ["Dubai", "Penang", "the mountains"], 1, "“then take the train to Penang”"], ["C1", "How are they going to travel to Penang?", ["by plane", "by train", "by bus"], 1, "“take the train to Penang”"], ["C1", "What would Faisal and his brother rather do?", ["visit the museums", "go shopping", "go to the beach"], 2, "“my brother and I would rather go to the beach”"], ["C1", "Why isn't Faisal going to take a phrasebook?", ["He forgot it.", "A lot of people there speak English.", "It's too heavy."], 1, "“because a lot of people there speak English”"], ["C1", "What does Faisal ask Omar to do?", ["book a hotel", "look after his bike", "meet him at the airport"], 1, "“Could you look after my bike while I'm away?”"], ["C2", "Who did Khalid go to Turkey with?", ["his friends", "his family", "nobody"], 0, "“went to Turkey with his friends”"], ["C2", "How long was the flight delayed?", ["one hour", "three hours", "two hours"], 1, "“delayed for three hours”"], ["C2", "What was the airport lounge like?", ["peaceful", "empty", "crowded"], 2, "“the airport lounge was very crowded”"], ["C2", "What was their accommodation like?", ["comfortable and clean", "small and old", "crowded and noisy"], 0, "“comfortable and clean”"], ["C2", "Where did they go on the excursion?", ["to the beach", "to the mountains", "to a museum"], 1, "“an interesting excursion to the mountains”"], ["C2", "Where would Khalid rather stay next year?", ["in the city", "near the airport", "in the village"], 2, "“I'd rather stay in the village than in the city”"]];
 
 const PART_NAME = {A:"Vocabulary", B:"Grammar", C:"Reading"};
-const L = "abcd", KEY = "ce-u6-test2";
+const L = "abc", KEY = "ce-u6-test3";
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -255,8 +202,8 @@ $("prev").onclick = () => go(st.i - 1);
 $("next").onclick = () => { if (st.i < Q.length - 1) go(st.i + 1); else finish(false); };
 
 $("start").onclick = () => {
-  const need = [["nm","your name","اسمك"],["eid","your ET ID#","رقم ET ID"],["grp","your group","المجموعة"]].find(([id]) => !$(id).value.trim());
-  if (need) { $("smsg").textContent = `Please write ${need[1]} first. اكتب/اختار ${need[2]} أول.`; $(need[0]).focus(); return; }
+  const need = [["nm","your name"],["eid","your ET ID#"],["grp","your group"]].find(([id]) => !$(id).value.trim());
+  if (need) { $("smsg").textContent = `Please write ${need[1]} first.`; $(need[0]).focus(); return; }
   $("smsg").textContent = ""; show("s-quiz"); render();
 };
 
@@ -281,17 +228,17 @@ function grade(send){
     rv += `<div class="rv"><div class="q">${i+1}. ${esc(q[1])}</div>` +
       `<div class="a ${ok?"ok":"no"}">${ok ? "✓ " : "✗ "}Your answer: ${a === undefined ? "—" : L[a] + ") " + esc(q[2][a])}</div>` +
       (ok ? "" : `<div class="a ok">Correct: ${L[q[3]]}) ${esc(q[2][q[3]])}</div>`) +
-      `<div class="why ar"><bdi>${esc(q[4])}</bdi></div></div>`; });
+      `<div class="why">${esc(q[4])}</div></div>`; });
   const total = score.A[0] + score.B[0] + score.C[0], pct = Math.round(total / Q.length * 100);
   $("rname").textContent = `${st.name} · ET ID# ${st.eid} · Group ${st.grp}`;
   $("rscore").textContent = `${total} / ${Q.length}`;
-  $("rmsg").innerHTML = `${pct}% — ` + (pct >= 85 ? "Excellent! ممتاز" : pct >= 60 ? "Good. راجع الأسئلة اللي باللون الأحمر." : "Keep practising. راجع الوحدة وجرب مرة ثانية.");
+  $("rmsg").innerHTML = `${pct}% — ` + (pct >= 85 ? "Excellent!" : pct >= 60 ? "Good. Check the questions in red." : "Keep practising. Review Unit 6 and try again.");
   for (const p of "ABC") $("r"+p).textContent = `${score[p][0]} / ${score[p][1]}`;
   $("review").innerHTML = rv;
   lastResult = {name:st.name, eid:st.eid, grp:st.grp, total, max:Q.length, pct};
   show("s-res");
   if (send && !st.done) { st.done = true; save(); sendResult(); }
-  else if (st.done) $("send").textContent = "✓ Result sent to the teacher. تم إرسال النتيجة للمعلم";
+  else if (st.done) $("send").textContent = "✓ Result sent to the teacher.";
 }
 
 function formTarget(){
@@ -305,13 +252,13 @@ async function sendResult(){
   const s = $("send"), rb = $("resend"); rb.hidden = true;
   const f = formTarget();
   if (!f) { s.textContent = ""; return; }
-  s.textContent = "Sending your result to the teacher… جاري إرسال النتيجة للمعلم";
+  s.textContent = "Sending your result to the teacher…";
   const r = lastResult, body = new URLSearchParams();
   [r.name, r.eid, r.grp, `${r.total} / ${r.max}`, r.pct + "%", TEST_NAME].forEach((v,i) => { if (f.ids[i]) body.append(f.ids[i], v); });
   try { await fetch(f.url, {method:"POST", mode:"no-cors", body});
-    s.textContent = "✓ Result sent to the teacher. تم إرسال النتيجة للمعلم";
+    s.textContent = "✓ Result sent to the teacher.";
   } catch(e) {
-    s.textContent = "✗ The result was not sent. Check the internet and press Send again. ما انرسلت النتيجة، تأكد من النت واضغط Send again";
+    s.textContent = "✗ The result was not sent. Check the internet and press Send again.";
     rb.hidden = false;
   }
 }
