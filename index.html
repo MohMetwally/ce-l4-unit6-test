@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unit 6 Test · Going on holiday</title>
+<meta name="description" content="Cutting Edge Pre-intermediate · Unit 6 test: Vocabulary, Grammar, Reading (50 questions)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#eef1f4;--card:#fff;--ink:#18233a;--muted:#5d6878;--line:#d6dce4;
+  --accent:#1d8a85;--accent-ink:#fff;--good:#1f8a5b;--good-bg:#e3f4ec;--bad:#c43c3c;--bad-bg:#fbe7e7;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--ar:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#10151f;--card:#19212f;--ink:#e8ecf3;--muted:#9aa5b6;--line:#2c3647;
+  --accent:#4cc7bf;--accent-ink:#062624;--good:#4cc68e;--good-bg:#16342a;--bad:#ef7676;--bad-bg:#3b1c1f;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);padding:20px 16px 56px;
+  -webkit-user-select:none;user-select:none}
+input{-webkit-user-select:text;user-select:text}
+.wrap{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header h1{font-family:var(--display);font-weight:800;font-size:1.9rem;line-height:1.1;margin:0;text-wrap:balance}
+header p{margin:6px 0 0;color:var(--muted)}
+.ar{font-family:var(--ar);direction:rtl;text-align:right}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.who{display:grid;grid-template-columns:auto 1fr;gap:10px 10px;align-items:center}
+.who label{font-weight:700;white-space:nowrap}
+.who input,.who select{min-width:0;width:100%;font:1rem var(--body);padding:10px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
+.nav{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--bg);padding:8px 0}
+.nav a{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:8px 4px;font-weight:700;font-size:.92rem}
+.nav a span{font-weight:400;font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums}
+h2{font-family:var(--display);font-weight:800;font-size:1.35rem;margin:6px 0 0;scroll-margin-top:80px}
+h2 small{font-family:var(--body);font-weight:400;font-size:.9rem;color:var(--muted)}
+.passage{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:14px 16px}
+.passage h3{margin:0 0 6px;font-family:var(--display);font-size:1.1rem}
+.passage p{margin:0 0 8px;line-height:1.65}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.q .stem{font-weight:700;margin:0}
+.q .stem b.n{display:inline-block;min-width:2em;color:var(--accent)}
+.opts{display:grid;gap:6px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer}
+.opt input{margin-top:4px;accent-color:var(--accent)}
+.opt:has(input:checked){border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.opt.ok{border-color:var(--good);background:var(--good-bg)}
+.opt.no{border-color:var(--bad);background:var(--bad-bg)}
+.q.miss{border-color:var(--bad)}
+.why{font-size:.92rem;color:var(--muted)}
+.btn{font:700 1rem var(--body);padding:12px 20px;border-radius:10px;border:0;background:var(--ink);color:var(--card);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+#result{display:none}
+.score{font-family:var(--display);font-weight:800;font-size:3rem;line-height:1;font-variant-numeric:tabular-nums}
+.parts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.parts div{background:var(--bg);border-radius:10px;padding:10px;text-align:center}
+.parts b{display:block;font-size:1.3rem;font-variant-numeric:tabular-nums}
+.left{color:var(--muted);font-size:.9rem}
+footer{color:var(--muted);font-size:.85rem;text-align:center}
+@media print{.nav,.row,#result .row,#send,.who button{display:none}body{background:#fff}.q,.passage,.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Unit 6 Test · Going on holiday</h1>
+    <p>Cutting Edge Pre-intermediate — 50 questions: Vocabulary, Grammar, Reading</p>
+  </header>
+
+  <div class="card who">
+    <label for="nm">Name:</label>
+    <input id="nm" type="text" placeholder="e.g. Ahmed Ali" maxlength="40" autocomplete="name">
+    <label for="eid">ET ID#:</label>
+    <input id="eid" type="text" placeholder="e.g. 4412345" maxlength="20" inputmode="numeric" autocomplete="off">
+    <label for="grp">Group:</label>
+    <select id="grp"><option value="">Choose…</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option></select>
+  </div>
+  <p class="ar" style="margin:0">جاوب على كل الأسئلة، وبعدين اضغط <b>Check my answers</b> تحت عشان تشوف درجتك والأجوبة الصحيحة.</p>
+
+  <nav class="nav" aria-label="Test parts">
+    <a href="#partA">Vocabulary<span id="cA">0 / 18</span></a>
+    <a href="#partB">Grammar<span id="cB">0 / 20</span></a>
+    <a href="#partC">Reading<span id="cC">0 / 12</span></a>
+  </nav>
+
+  <form id="test" class="wrap" style="gap:12px" novalidate></form>
+
+  <div class="row">
+    <button class="btn" id="check" type="button">Check my answers</button>
+    <span class="left" id="left"></span>
+  </div>
+
+  <section class="card" id="result" aria-live="polite">
+    <div class="left" id="rname"></div>
+    <div class="score" id="rscore"></div>
+    <div id="rmsg" style="margin-top:6px"></div>
+    <div class="parts">
+      <div>Vocabulary<b id="rA"></b></div><div>Grammar<b id="rB"></b></div><div>Reading<b id="rC"></b></div>
+    </div>
+    <div id="send" class="left" style="margin-top:10px"></div>
+    <div class="row" style="margin-top:14px">
+      <button class="btn ghost" id="resend" type="button" hidden>Send again</button>
+      <button class="btn" id="again" type="button">Try again</button>
+      <button class="btn ghost" id="print" type="button">Print / Save as PDF</button>
+    </div>
+  </section>
+
+  <footer>© 2026 Metwally · Cutting Edge Pre-intermediate · Unit 6</footer>
+</div>
+
+<script>
+/* ===== Where results go ===== */
+/* 1) Google Form: paste the form's "pre-filled link" between the quotes.
+      Questions in this order: Name, ET ID#, Group, Score, Percentage, Test */
+const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfIyKgOjaWwy1AVIxiXCwNE-YpUmJNfm5rVknf0qRN1GU0QSw/viewform?usp=pp_url&entry.1420658327=1&entry.988858162=2&entry.1107879298=3&entry.1171550918=4&entry.844294529=5&entry.1724463703=6";
+/* 2) Email (via formsubmit.co). Leave "" to turn email off. */
+const TEACHER_EMAIL = "";
+const TEST_NAME = "Unit 6 Test";
+
+/* Each question: [part, stem, [options a–d], index of correct option, short reason] */
+const T1 = {title:"Text 1 – Faisal's email", text:[
+ "Hi Omar,",
+ "Guess what? Next month my family and I are going to spend two weeks in Malaysia! We're planning to stay in Kuala Lumpur for five days and then take the train to Penang. My father would like to visit the museums, but my brother and I would rather go to the beach. My mother is going to book a luxurious hotel by the sea for the second week.",
+ "I've made a list of things to pack: my passport, sunglasses, suncream and a guidebook. I'm not going to take a phrasebook because a lot of people there speak English. The weather will be hot and wet, so I won't need any warm clothes. I think it'll be the perfect holiday!",
+ "Could you look after my bike while I'm away?",
+ "Faisal"]};
+const T2 = {title:"Text 2 – Khalid's holiday", text:[
+ "Last summer, Khalid went to Turkey with his friends. The start of the trip wasn't good. Their flight was delayed for three hours, and the airport lounge was very crowded. When they arrived, there was a long queue at passport control. But after that, everything was great. Their accommodation was comfortable and clean, and the hotel staff were very friendly. On the third day, they went on an interesting excursion to the mountains, where the scenery was beautiful. Khalid's favourite place was a peaceful lake near a small village. “Next year I'd like to go back,” he says, “but I'd rather stay in the village than in the city.”"]};
+
+const Q = [
+["A","You need your ___ to get through passport control.",["guidebook","towel","passport","phrasebook"],2,"passport = جواز السفر."],
+["A","Put on some ___ before you go to the beach, or you'll get burnt.",["toothpaste","suncream","sunglasses","foreign currency"],1,"suncream = واقي الشمس."],
+["A","I always feel ill on boats, so I take ___.",["credit cards","plane tickets","a swimsuit","travel sickness pills"],3,"travel sickness pills = حبوب دوار السفر."],
+["A","A ___ tells you about the places to visit in a city.",["guidebook","phrasebook","passport","camera"],0,"guidebook = دليل سياحي."],
+["A","I'm going to change some money into ___ at the airport.",["credit cards","plane tickets","foreign currency","suncream"],2,"foreign currency = عملة أجنبية."],
+["A","Don't forget your ___ – we're going swimming this afternoon.",["toothbrush","swimsuit","passport","phrasebook"],1,"swimsuit = ملابس السباحة."],
+["A","I brought my toothbrush, but I forgot the ___.",["towel","suncream","camera","toothpaste"],3,"toothpaste = معجون الأسنان."],
+["A","It's very bright today. Wear your ___.",["sunglasses","suncream","swimsuit","towel"],0,"sunglasses = نظارة شمسية."],
+["A","Our flight was ___ for four hours because of the bad weather.",["crowded","delayed","luxurious","peaceful"],1,"delayed = متأخرة."],
+["A","The beach was very ___ – there were people everywhere.",["peaceful","comfortable","crowded","delayed"],2,"crowded = زحمة."],
+["A","We waited in a long ___ at passport control.",["queue","lounge","excursion","scenery"],0,"queue = طابور."],
+["A","It was a five-star hotel with very ___ rooms.",["crowded","delayed","long","luxurious"],3,"luxurious = فخم."],
+["A","From the top of the mountain we could see beautiful ___.",["queues","scenery","accommodation","excursions"],1,"scenery = المناظر الطبيعية."],
+["A","We went on an ___ to the old city with a tour guide.",["accommodation","lounge","excursion","queue"],2,"excursion = جولة / رحلة قصيرة."],
+["A","The seats on the train were soft and ___.",["comfortable","crowded","delayed","long"],0,"comfortable = مريح."],
+["A","Which word can NOT go with “peaceful”?",["beach","lake","village","queue"],3,"نقول long queue، مو peaceful queue."],
+["A","Which word can NOT go with “delayed”?",["flight","scenery","train","bus"],1,"delayed للمواصلات بس."],
+["A","We stayed in cheap ___ near the station.",["excursion","scenery","accommodation","lounge"],2,"accommodation = السكن."],
+["B","We ___ going to visit our cousins in Dubai next week.",["are","is","am","be"],0,"we + are + going to."],
+["B","Ahmed is planning ___ a new car.",["buy","buying","to buy","bought"],2,"planning + to + V1."],
+["B","___ you going to stay in a hotel?",["Do","Are","Will","Is"],1,"Are you going to …?"],
+["B","I'm not ___ to take a taxi. I'll walk.",["go","goes","gone","going"],3,"I'm not going to + V1."],
+["B","I'd like ___ Japan one day.",["visit","to visit","visiting","visited"],1,"would like + to + V1."],
+["B","I'd rather ___ by train than by bus.",["travel","to travel","travelling","travelled"],0,"would rather + V1 بدون to."],
+["B","Would you rather stay at home ___ go out?",["than","and","or","but"],2,"في السؤال نخيّر بـ or."],
+["B","I'd rather ___ go out tonight. I'm tired.",["don't","not to","no","not"],3,"would rather not + V1."],
+["B","I think it ___ sunny tomorrow.",["is going","will be","will","be"],1,"التوقع: will + be."],
+["B","Don't worry. You ___ need a coat – it's very hot there.",["won't","don't will","willn't","aren't"],0,"won't = will not."],
+["B","___ it be easy to find a taxi at the airport?",["Does","Is","Will","Do"],2,"Will it be …?"],
+["B","A: Will you be home late? B: No, I ___.",["don't","won't","am not","willn't"],1,"No, I won't."],
+["B","Which sentence is a prediction?",["We're going to leave at 6.","I'd like to go abroad.","I'm planning to book a hotel.","I think you'll love Abha."],3,"التوقع بـ will: I think you'll …"],
+["B","Which sentence is a plan?",["We're going to drive to the beach on Friday.","It'll be hot.","You won't need a visa.","I think it'll rain."],0,"الخطة بـ going to."],
+["B","Could you ___ me the way to the station, please?",["telling","to tell","tell","told"],2,"Could you + V1."],
+["B","Do you mind ___ the window? It's cold.",["close","closing","to close","closed"],1,"Do you mind + V-ing."],
+["B","Do you mind if I ___ here?",["sit","sitting","to sit","sat"],0,"Do you mind if I + V1."],
+["B","Is it OK if I ___ your pen?",["borrowing","to borrow","borrowed","borrow"],3,"Is it OK if I + V1."],
+["B","A: Do you mind if I open the window? B: ___ It's hot in here.",["Yes, of course.","No, not at all.","Yes, I mind.","No, I can't."],1,"No, not at all = ما عندي مانع."],
+["B","Make it more polite: “Where's the bus station?”",["Could you tell me where is the bus station?","Could you tell me the bus station where is?","Could you tell me where the bus station is?","Could tell you me where the bus station is?"],2,"بعد Could you tell me يجي ترتيب الجملة العادي."],
+["C1","How long is the family going to stay in Malaysia?",["five days","two weeks","one month","one week"],1,"“to spend two weeks in Malaysia”"],
+["C1","Where are they going after Kuala Lumpur?",["Dubai","Abha","the mountains","Penang"],3,"“then take the train to Penang”"],
+["C1","How are they going to travel to Penang?",["by train","by plane","by car","by bus"],0,"“take the train to Penang”"],
+["C1","What would Faisal and his brother rather do?",["visit museums","stay at the hotel","go to the beach","go shopping"],2,"“my brother and I would rather go to the beach”"],
+["C1","Why isn't Faisal going to take a phrasebook?",["He forgot it.","Many people there speak English.","It's too heavy.","His brother has one."],1,"“because a lot of people there speak English”"],
+["C1","What does Faisal ask Omar to do?",["book a hotel","send him a guidebook","meet him at the airport","look after his bike"],3,"“Could you look after my bike?”"],
+["C2","Who did Khalid go to Turkey with?",["his friends","his family","his brother","nobody"],0,"“went to Turkey with his friends”"],
+["C2","How long was the flight delayed?",["one hour","two hours","three hours","four hours"],2,"“delayed for three hours”"],
+["C2","What was the airport lounge like?",["peaceful","crowded","luxurious","empty"],1,"“the airport lounge was very crowded”"],
+["C2","What was their accommodation like?",["crowded and noisy","expensive and dirty","small and old","comfortable and clean"],3,"“comfortable and clean”"],
+["C2","Where did they go on the excursion?",["to the mountains","to the beach","to the city","to a museum"],0,"“an excursion to the mountains”"],
+["C2","Where would Khalid rather stay next year?",["in the city","in a luxurious hotel","in the village","near the airport"],2,"“I'd rather stay in the village”"]
+];
+
+const PARTS = {A:{id:"partA",title:"Part A · Vocabulary",sub:"Questions 1–18"},B:{id:"partB",title:"Part B · Grammar",sub:"Questions 19–38"},C:{id:"partC",title:"Part C · Reading",sub:"Questions 39–50"}};
+const form = document.getElementById("test");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const L = "abcd";
+
+function passage(t){return `<div class="passage"><h3>${esc(t.title)}</h3>${t.text.map(p=>`<p>${esc(p)}</p>`).join("")}</div>`}
+
+let html = "", last = "";
+Q.forEach((q, i) => {
+  const part = q[0][0];
+  if (part !== last[0]) { const P = PARTS[part]; html += `<h2 id="${P.id}">${P.title} <small>${P.sub}</small></h2>`; }
+  if (q[0] === "C1" && last !== "C1") html += passage(T1);
+  if (q[0] === "C2" && last !== "C2") html += passage(T2);
+  last = q[0];
+  html += `<fieldset class="q" id="q${i}" style="margin:0"><legend class="stem"><b class="n">${i+1}.</b>${esc(q[1])}</legend><div class="opts">` +
+    q[2].map((o, j) => `<label class="opt"><input type="radio" name="a${i}" value="${j}"><span><b>${L[j]})</b> ${esc(o)}</span></label>`).join("") +
+    `</div><div class="why ar" hidden></div></fieldset>`;
+});
+form.innerHTML = html;
+
+function counts(){
+  const c = {A:[0,0],B:[0,0],C:[0,0]};
+  Q.forEach((q,i)=>{const p=q[0][0];c[p][1]++;if(form.querySelector(`input[name="a${i}"]:checked`))c[p][0]++});
+  return c;
+}
+function updateNav(){
+  const c = counts();
+  for (const p of "ABC") document.getElementById("c"+p).textContent = `${c[p][0]} / ${c[p][1]}`;
+  const done = c.A[0]+c.B[0]+c.C[0];
+  document.getElementById("left").textContent = done < Q.length ? `${Q.length - done} questions left` : "All questions answered ✓";
+}
+form.addEventListener("change", updateNav);
+
+/* keep answers if the page is reloaded */
+const KEY = "ce-u6-test";
+try { const s = JSON.parse(localStorage.getItem(KEY) || "{}");
+  if (s.name) document.getElementById("nm").value = s.name;
+  if (s.eid) document.getElementById("eid").value = s.eid;
+  if (s.grp) document.getElementById("grp").value = s.grp;
+  Object.entries(s.ans || {}).forEach(([i,v]) => { const r = form.querySelector(`input[name="a${i}"][value="${v}"]`); if (r) r.checked = true; });
+} catch(e) {}
+function saveLocal(){ try { const ans = {}; Q.forEach((q,i)=>{const r=form.querySelector(`input[name="a${i}"]:checked`);if(r)ans[i]=r.value});
+  localStorage.setItem(KEY, JSON.stringify({name:document.getElementById("nm").value, eid:document.getElementById("eid").value, grp:document.getElementById("grp").value, ans})); } catch(e) {} }
+form.addEventListener("change", saveLocal);
+["nm","eid","grp"].forEach(id=>{const el=document.getElementById(id);el.addEventListener("input", saveLocal);el.addEventListener("change", saveLocal)});
+updateNav();
+
+function check(){
+  const need = [["nm","your name","اسمك"],["eid","your ET ID#","رقم ET ID"],["grp","your group","المجموعة"]].find(([id])=>!document.getElementById(id).value.trim());
+  if (need) { const el = document.getElementById(need[0]); document.getElementById("left").textContent = `Please write ${need[1]} first. اكتب/اختار ${need[2]} أول.`; el.focus(); el.scrollIntoView({behavior:"smooth",block:"center"}); return; }
+  const c = counts(), blank = Q.length - (c.A[0]+c.B[0]+c.C[0]);
+  if (blank && !confirmBlank(blank)) return;
+  const score = {A:[0,0],B:[0,0],C:[0,0]};
+  Q.forEach((q,i)=>{
+    const p=q[0][0], box=document.getElementById("q"+i), r=form.querySelector(`input[name="a${i}"]:checked`);
+    score[p][1]++;
+    box.querySelectorAll(".opt").forEach((o,j)=>{o.classList.toggle("ok", j===q[3]); o.classList.remove("no")});
+    const ok = r && +r.value === q[3];
+    if (ok) score[p][0]++; else { box.classList.add("miss"); if (r) r.closest(".opt").classList.add("no"); }
+    const w = box.querySelector(".why"); w.hidden = false;
+    w.innerHTML = (ok ? "✓ صح — " : "✗ الجواب الصحيح: <b dir=\"ltr\">" + L[q[3]] + ") " + esc(q[2][q[3]]) + "</b> — ") + `<bdi>${esc(q[4])}</bdi>`;
+    box.querySelectorAll("input").forEach(x=>x.disabled=true);
+  });
+  const total = score.A[0]+score.B[0]+score.C[0], pct = Math.round(total/Q.length*100);
+  const name = document.getElementById("nm").value.trim(), eid = document.getElementById("eid").value.trim(), grp = document.getElementById("grp").value.trim();
+  document.getElementById("rname").textContent = `${name} · ET ID# ${eid} · Group ${grp} · ` + new Date().toLocaleString("en-GB",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});
+  document.getElementById("rscore").textContent = `${total} / ${Q.length}`;
+  document.getElementById("rmsg").innerHTML = `${pct}% — ` + (pct>=85?"Excellent! ممتاز":pct>=60?"Good. راجع الأسئلة اللي باللون الأحمر.":"Keep practising. راجع الوحدة وجرب مرة ثانية.");
+  for (const p of "ABC") document.getElementById("r"+p).textContent = `${score[p][0]} / ${score[p][1]}`;
+  const wrong = Q.map((q,i)=>i).filter(i=>{const r=form.querySelector(`input[name="a${i}"]:checked`);return !(r && +r.value===Q[i][3])});
+  const ans = Q.map((q,i)=>{const r=form.querySelector(`input[name="a${i}"]:checked`);return (i+1)+(r?L[+r.value]:"-")}).join(" ");
+  lastResult = {
+    _subject: `${TEST_NAME} – Group ${grp} – ${name} (${eid}) – ${total}/${Q.length}`,
+    _template: "table", _captcha: "false",
+    Total: total, Max: Q.length, Student: name, ET_ID: eid, Group: grp, Test: TEST_NAME, Score: `${total} / ${Q.length} (${pct}%)`,
+    Vocabulary: `${score.A[0]} / ${score.A[1]}`, Grammar: `${score.B[0]} / ${score.B[1]}`, Reading: `${score.C[0]} / ${score.C[1]}`,
+    Wrong_or_blank: wrong.length ? wrong.map(i=>i+1).join(", ") : "none",
+    Answers: ans, Time: new Date().toLocaleString("en-GB")
+  };
+  sendResult();
+  const res = document.getElementById("result"); res.style.display = "block";
+  document.getElementById("check").style.display = "none";
+  res.scrollIntoView({behavior:"smooth", block:"start"});
+}
+let warned = false, lastResult = null;
+function formTarget(){
+  if (!FORM_LINK) return null;
+  try { const u = new URL(FORM_LINK);
+    const ids = [...u.searchParams.keys()].filter(k=>/^entry\.\d+$/.test(k));
+    return {url: u.origin + u.pathname.replace(/\/(viewform|edit|formResponse)$/, "") + "/formResponse", ids};
+  } catch(e) { return null; }
+}
+async function sendResult(){
+  const st = document.getElementById("send"), rb = document.getElementById("resend");
+  rb.hidden = true; st.textContent = "Sending your result to the teacher… جاري إرسال النتيجة للمعلم";
+  const jobs = [];
+  const f = formTarget();
+  if (f) { const body = new URLSearchParams();
+    [lastResult.Student, lastResult.ET_ID, lastResult.Group, `${lastResult.Total} / ${lastResult.Max}`,
+     Math.round(lastResult.Total / lastResult.Max * 100) + "%", lastResult.Test].forEach((v,i)=>{ if (f.ids[i]) body.append(f.ids[i], v); });
+    jobs.push(fetch(f.url, {method:"POST", mode:"no-cors", body})); }
+  if (TEACHER_EMAIL) jobs.push(fetch("https://formsubmit.co/ajax/" + TEACHER_EMAIL, {method:"POST",
+      headers:{"Content-Type":"application/json","Accept":"application/json"}, body: JSON.stringify(lastResult)})
+    .then(async r=>{ const j = await r.json().catch(()=>({})); if (!r.ok || String(j.success) === "false") throw new Error(j.message || r.status); }));
+  const res = await Promise.allSettled(jobs);
+  if (jobs.length && res.every(x=>x.status==="fulfilled")) st.textContent = "✓ Result sent to the teacher. تم إرسال النتيجة للمعلم";
+  else { st.textContent = "✗ The result was not sent. Check the internet and press Send again. ما انرسلت النتيجة، تأكد من النت واضغط Send again"; rb.hidden = false; }
+}
+document.getElementById("resend").onclick = sendResult;
+function confirmBlank(n){
+  if (warned) return true;
+  warned = true;
+  document.getElementById("left").textContent = `${n} questions are empty. Press the button again to finish anyway.`;
+  const first = Q.findIndex((q,i)=>!form.querySelector(`input[name="a${i}"]:checked`));
+  document.getElementById("q"+first).scrollIntoView({behavior:"smooth", block:"center"});
+  return false;
+}
+document.getElementById("check").onclick = check;
+document.getElementById("again").onclick = () => {
+  try { localStorage.removeItem(KEY) } catch(e) {}
+  form.querySelectorAll("input").forEach(x=>{x.checked=false;x.disabled=false});
+  form.querySelectorAll(".opt").forEach(o=>o.classList.remove("ok","no"));
+  form.querySelectorAll(".q").forEach(b=>{b.classList.remove("miss");b.querySelector(".why").hidden=true});
+  document.getElementById("result").style.display = "none";
+  document.getElementById("send").textContent = ""; document.getElementById("resend").hidden = true;
+  document.getElementById("check").style.display = "";
+  warned = false; updateNav(); window.scrollTo({top:0, behavior:"smooth"});
+};
+document.getElementById("print").onclick = () => window.print();
+
+/* light copy protection */
+document.addEventListener("contextmenu", e => { if (!e.target.closest("input")) e.preventDefault(); });
+document.addEventListener("copy", e => e.preventDefault());
+</script>
+</body>
+</html>
